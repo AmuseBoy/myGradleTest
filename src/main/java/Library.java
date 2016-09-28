@@ -6,6 +6,8 @@
  */
 public class Library {
     public boolean someLibraryMethod() {
+        System.out.println("这也是别人改的");
+        System.out.println("我又加上自己的");
         return true;
     }
 }
