@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class GradleApplication {
 
+	//这是变更
 	public static void main(String[] args) {
 		SpringApplication.run(GradleApplication.class, args);
 	}
