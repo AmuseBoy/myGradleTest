@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class GradleApplication {
 
-	//这是变更33
+	//这是变更3344
 	public static void main(String[] args) {
 		SpringApplication.run(GradleApplication.class, args);
 	}
