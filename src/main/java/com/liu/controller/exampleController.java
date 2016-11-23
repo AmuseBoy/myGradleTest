@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class exampleController {
 
 	/*
-	 * example
+	 * example合并前1.1
 	 */
 	@RequestMapping(value="/user/{userId}", method=RequestMethod.GET)
 	public String queryAll(@PathVariable String userId){
