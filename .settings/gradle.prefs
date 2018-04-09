@@ -1,10 +1,10 @@
 {
   "1.0": {
     "project_path": ":",
-    "project_dir": "F:\\workspace\\testGradle\\myGradleTest",
-    "connection_project_dir": "F:\\workspace\\testGradle\\myGradleTest",
+    "project_dir": "E:\\青岛海尔系统\\workspace\\testGradle\\myGradleTest",
+    "connection_project_dir": "E:\\青岛海尔系统\\workspace\\testGradle\\myGradleTest",
     "connection_gradle_user_home": null,
-    "connection_gradle_distribution": "GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\\Program Files (x86)\\QingDaoProject\\gradle-2.10))",
+    "connection_gradle_distribution": "GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\\Program Files (x86)\\gradle-2.10))",
     "connection_java_home": null,
     "connection_jvm_arguments": "",
     "connection_arguments": ""
