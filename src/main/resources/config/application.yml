@@ -1,0 +1,85 @@
+server:
+  port: 8088
+logstash:
+  host: 10.164.194.142
+  port: 9600
+management:
+  security:
+    enabled: false # 401权限 访问 spring-boot-admin
+security:
+  sessions: NEVER
+  user:
+    name: actuator
+    password: admin@act
+spring:
+  application:
+    name: MyGradle
+  boot:
+    admin:
+      url: http://127.0.0.1:8089
+      client:
+        prefer-ip: true
+  session:
+    store-type: none
+  redis:   
+    host: 10.164.194.142     
+    port: 6379    
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/orcl     
+    testWhileIdle: true     
+    validationQuery: SELECT 1 from dual     
+    username: demo     
+    password: demo     
+    driverClassName: oracle.jdbc.OracleDriver   
+  jpa:     
+    database: ORACLE     
+    show-sql: true     
+    hibernate:       
+      show-sql: true       
+      ddl-auto: none       
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy     
+    properties:       
+      hibernate.dialect: org.hibernate.dialect.Oracle10gDialect       
+      org.hibernate.envers.audit_table_suffix: _H       
+  data:
+    rest.base-path: /api       # 访问地址/api/browser/index.html
+#  mail:
+#    host: smtp.ym.163.com
+#    username: liupeizhen@bestvike.com
+#    password: 123456
+#    javaMailProperties:
+#      mail:
+#        smtp:
+#          auth: true
+#          timeout: 25000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+  eureka:
+    enabled: true
+common:
+  address:
+    extUrl: http://CRM-BETA     # http://CRM
+    extUrlIp: http://10.164.194.215:8081
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registryFetchIntervalSeconds: 5
+    eurekaServiceUrlPollIntervalSeconds: 120
+    serviceUrl:
+      defaultZone: http://10.164.197.208:1180/eureka/,http://10.164.197.209:1180/eureka/ #http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 15
+    leaseExpirationDurationInSeconds: 30
+    securePortEnabled: false
+       
+       
+       
+       
+       
+       
+       
+         
