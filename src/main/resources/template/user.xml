@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+    <!-- <worksheet name="Sheet1"> -->
+    <worksheet idx="0">
+	    <section startRow="0" endRow="0">
+        	<mapping cell="A1">head.id</mapping>
+            <mapping cell="B1">head.name</mapping>
+            <mapping cell="C1">head.sex</mapping>
+            <mapping cell="D1">head.birth</mapping>
+            <mapping row="0" col="4">head.email</mapping> 
+        </section>
+        <loop startRow="1" endRow="1" items="userList" var="user" varType="com.liu.person.user.User">
+            <section startRow="1" endRow="1">
+                <mapping row="1" col="0">user.id</mapping>
+                <mapping row="1" col="1">user.name</mapping>
+                <mapping row="1" col="2">user.sex</mapping>
+                <mapping row="1" col="3">user.birth</mapping>
+                <mapping row="1" col="4">user.email</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0">
+                    <cellcheck offset="0"></cellcheck>
+                    <cellcheck offset="1"></cellcheck>
+                    <cellcheck offset="2"></cellcheck>
+                    <cellcheck offset="3"></cellcheck>
+                    <cellcheck offset="4"></cellcheck>
+                </rowcheck>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>

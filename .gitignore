@@ -1,0 +1,12 @@
+.idea/
+.settings/
+.project
+bin/
+log/
+logs/
+GradleProjectTest.iml
+build/
+.gradle/
+.classpath
+/out/
+/src/main/resources/bootstrap.yml

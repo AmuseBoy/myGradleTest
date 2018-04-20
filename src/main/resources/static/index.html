@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie8渲染-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <title>amuse</title>
+
+    <link href="pub/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" href="pub/bootstrap-3.3.7-dist/less/bootstrap.less" media="all" />
+    <!--<link rel="stylesheet/less" type="text/css" href="css/main.less">-->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="h1">My BootStrap<small>学习之路永不停止</small></h1>
+
+    <p>这是一个段落，介绍我的学习之旅</p>
+
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <thead>
+            <th>#</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>userName</th>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>1</td>
+                <td>122</td>
+                <td>22</td>
+                <td>222</td>
+            </tr>
+            <tr class="danger">
+                <td>2</td>
+                <td>ffd</td>
+                <td>ee</td>
+                <td>ff</td>
+            </tr>
+            <tr class="warning">
+                <td>2</td>
+                <td>ffd</td>
+                <td>ee</td>
+                <td>ff</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/team/img-bg.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/team/banner-bg.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+<!--    <div class="container">
+        <div class="jumbotron">
+            <h1>我的第一个 Bootstrap 页面</h1>
+            <p>重置窗口大小，查看响应式效果！</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>第一列</h3>
+                <p>学的不仅是技术，更是梦想！</p>
+                <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>第一列</h3>
+                <p>学的不仅是技术，更是梦想！</p>
+                <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>第一列</h3>
+                <p>学的不仅是技术，更是梦想！</p>
+                <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            </div>
+        </div>
+    </div>-->
+
+    <h2 id="tubiao">图标</h2>
+    <p>插入图标</p>
+    <p></p>
+
+
+    <form action="/api/file/upload?name=参数" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileUpload" accept="image/*" />
+        <input type="submit" value="上传" />
+    </form>
+
+    <script src="pub/jquery/jquery-3.2.1.min.js"></script>
+    <script src="pub/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="pub/less/less.js" type="text/javascript"></script>
+    <script src="pub/requireJS/require.js" defer async="true" data-main="index.js"></script>
+
+</body>
+</html>

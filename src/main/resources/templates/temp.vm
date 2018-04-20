@@ -1,0 +1,9 @@
+<html>
+  <head>
+  </head>
+  <body bgcolor='white'>
+    <h1>你好， ${username}请勿回复！</h1>
+	<img src='cid:abc'>
+	<br />请<a href='http://www.baidu.com'>点击</a>访问首页
+  </body>
+</html>
