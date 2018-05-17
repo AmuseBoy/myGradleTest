@@ -9,4 +9,3 @@ build/
 .gradle/
 .classpath
 /out/
-/src/main/resources/bootstrap.yml

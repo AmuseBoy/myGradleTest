@@ -3,8 +3,8 @@ buildscript {
         springBootVersion = '1.5.6.RELEASE'
     }
     repositories {
-        maven { url 'http://10.164.194.139:8081/nexus/content/groups/public/' }
-//        mavenCentral()
+        //maven { url 'http://10.164.194.139:8081/nexus/content/groups/public/' }
+        mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
@@ -32,8 +32,8 @@ dependencyManagement {
 }
 
 repositories {
-    maven { url 'http://10.164.194.139:8081/nexus/content/groups/public/' }
-    //mavenCentral()
+    //maven { url 'http://10.164.194.139:8081/nexus/content/groups/public/' }
+    mavenCentral()
     flatDir {
         dirs 'lib'
     }
@@ -47,7 +47,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile('org.springframework.data:spring-data-rest-hal-browser')
     compile("org.springframework.boot:spring-boot-starter-data-redis")
-    compile("org.springframework.boot:spring-boot-starter-redis")//需要在application配置redis
+    //compile("org.springframework.boot:spring-boot-starter-redis")//需要在application配置redis
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.springframework.session:spring-session")
     compile('org.springframework.data:spring-data-envers:1.1.6.RELEASE')
@@ -58,14 +58,15 @@ dependencies {
     compile("org.jxls:jxls:2.3.0")
     compile("org.jxls:jxls-jexcel:1.0.6")//这个不好用，尽量用 poi
     compile(":ojdbc6:")
+    compile('com.oracle:ojdbc6:11.2.0.3')
     compile('org.json:json:20160212')
     compile('org.springframework:spring-context-support')
     compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-mail")
-    compile("org.springframework.boot:spring-boot-starter-velocity")
-    compile("org.springframework.boot:spring-boot-starter-parent")
+    //compile("org.springframework.boot:spring-boot-starter-velocity")
+    //compile("org.springframework.boot:spring-boot-starter-parent")
     compile('org.springframework.data:spring-data-rest-hal-browser')// http://localhost:8088/api/browser/index.html
-    compile("org.springsource.loaded:springloaded:1.1.5.RELEASE")//热部署
+    //compile("org.springsource.loaded:springloaded:1.1.5.RELEASE")//热部署
 
     compile('net.logstash.logback:logstash-logback-encoder:4.9')
     compile("com.sndyuk:logback-more-appenders:1.4.2")
